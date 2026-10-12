@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up - LinkShield AI</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        🛡️ LinkShield AI
+    </div>
+
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="index.html#features">
+                Features
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+
+    <div class="nav-buttons">
+
+        <a href="login.html"
+           class="login-btn">
+            Login
+        </a>
+
+        <a href="signup.html"
+           class="signup-btn">
+            Sign Up
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= SIGNUP SECTION ================= -->
+
+<main class="signup-page">
+
+    <div class="signup-card">
+
+
+        <!-- Icon -->
+
+        <div class="login-icon">
+            🛡️
+        </div>
+
+
+        <!-- Heading -->
+
+        <h1>
+            Create Account
+        </h1>
+
+
+        <p class="login-subtitle">
+            Create your LinkShield AI account
+        </p>
+
+
+
+        <!-- ================= SIGNUP FORM ================= -->
+
+        <form id="signupForm">
+
+
+            <!-- ================= FULL NAME ================= -->
+
+            <div class="form-group">
+
+                <label for="signupName">
+                    Full Name
+                </label>
+
+
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- ================= EMAIL ================= -->
+
+            <div class="form-group">
+
+                <label for="signupEmail">
+                    Email Address
+                </label>
+
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="example@gmail.com"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- ================= PASSWORD ================= -->
+
+            <div class="form-group">
+
+                <label for="signupPassword">
+                    Password
+                </label>
+
+
+                <div class="password-box">
+
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Create a strong password"
+                        minlength="8"
+                        required
+                    >
+
+
+                    <button
+                        type="button"
+                        class="show-password"
+                        onclick="togglePassword('signupPassword', this)"
+                    >
+                        ◉
+                    </button>
+
+
+                </div>
+
+
+                <small class="password-hint">
+
+                    Minimum 8 characters with uppercase,
+                    lowercase, number and special character.
+
+                </small>
+
+            </div>
+
+
+
+            <!-- ================= CONFIRM PASSWORD ================= -->
+
+            <div class="form-group">
+
+                <label for="signupConfirmPassword">
+                    Confirm Password
+                </label>
+
+
+                <div class="password-box">
+
+
+                    <input
+                        type="password"
+                        id="signupConfirmPassword"
+                        placeholder="Re-enter your password"
+                        minlength="8"
+                        required
+                    >
+
+
+                    <button
+                        type="button"
+                        class="show-password"
+                        onclick="togglePassword('signupConfirmPassword', this)"
+                    >
+                        ◉
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= TERMS ================= -->
+
+            <div class="terms">
+
+                <label>
+
+
+                    <input
+                        type="checkbox"
+                        id="termsCheckbox"
+                        required
+                    >
+
+
+                    I agree to the Terms and Conditions.
+
+
+                </label>
+
+            </div>
+
+
+
+            <!-- ================= CREATE ACCOUNT ================= -->
+
+            <button
+                type="submit"
+                class="login-submit"
+            >
+                Create Account
+            </button>
+
+
+        </form>
+
+
+
+        <!-- ================= LOGIN LINK ================= -->
+
+        <p class="signup-text">
+
+            Already have an account?
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </p>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

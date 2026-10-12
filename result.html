@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Analysis Result - LinkShield AI
+    </title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        🛡️ LinkShield AI
+    </div>
+
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="index.html#features">
+                Features
+            </a>
+        </li>
+
+        <li>
+            <a href="index.html#contact">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+
+    <div class="nav-buttons">
+
+        <a href="login.html"
+           class="login-btn">
+            Login
+        </a>
+
+        <a href="signup.html"
+           class="signup-btn">
+            Sign Up
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= RESULT PAGE ================= -->
+
+<main class="result-page">
+
+
+    <!-- ================= RESULT HEADER ================= -->
+
+    <div class="result-header">
+
+        <p class="tagline">
+            🛡️ LinkShield AI Analysis
+        </p>
+
+
+        <h1>
+            Analysis Result
+        </h1>
+
+
+        <p id="analysisDescription">
+            Here is the security analysis of the submitted item.
+        </p>
+
+    </div>
+
+
+
+    <!-- ================= ANALYZED ITEM ================= -->
+
+    <section class="result-card analyzed-url-card">
+
+        <h2 id="analyzedItemTitle">
+            🔗 Analyzed Website
+        </h2>
+
+
+        <p id="analyzedUrl">
+            Analyzing...
+        </p>
+
+
+        <!-- SCREENSHOT PREVIEW -->
+
+        <div
+            id="resultScreenshotContainer"
+            style="display:none; margin-top:20px;"
+        >
+
+            <img
+                id="resultScreenshot"
+                src=""
+                alt="Analyzed Screenshot"
+                style="
+                    max-width:100%;
+                    max-height:400px;
+                    border-radius:10px;
+                    border:1px solid #ddd;
+                "
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= RESULT SUMMARY ================= -->
+
+    <section class="result-summary">
+
+        <div
+            class="status-icon"
+            id="statusIcon"
+        >
+            ?
+        </div>
+
+
+        <h2 id="statusText">
+            Analyzing...
+        </h2>
+
+
+        <p
+            class="result-message"
+            id="resultMessage"
+        >
+            Please wait while LinkShield AI analyzes the item.
+        </p>
+
+
+        <div class="trust-score">
+
+            <span>
+                Trust Score
+            </span>
+
+
+            <strong id="trustScore">
+                --
+            </strong>
+
+
+            <small>
+                / 100
+            </small>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SECURITY ANALYSIS ================= -->
+
+    <section class="result-card">
+
+        <h2>
+            🔍 Security Analysis
+        </h2>
+
+
+        <ul
+            class="result-list"
+            id="findingsList"
+        >
+
+            <li>
+                Analyzing...
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- ================= PRECAUTIONS ================= -->
+
+    <section class="result-card warning-card">
+
+        <h2>
+            ⚠️ Recommended Precautions
+        </h2>
+
+
+        <ul
+            class="result-list"
+            id="precautionsList"
+        >
+
+            <li>
+                Loading recommendations...
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- ================= EXTRACTED TEXT ================= -->
+
+    <section
+        class="result-card"
+        id="ocrSection"
+        style="display:none;"
+    >
+
+        <h2>
+            📝 Detected Text
+        </h2>
+
+
+        <p>
+            Text extracted from the screenshot:
+        </p>
+
+
+        <div
+            id="extractedText"
+            style="
+                white-space:pre-wrap;
+                background:#f5f7fa;
+                padding:15px;
+                border-radius:8px;
+                max-height:250px;
+                overflow:auto;
+            "
+        >
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         AI SECURITY ASSISTANT
+    ===================================================== -->
+
+    <section class="ai-card">
+
+        <div class="ai-header">
+
+            <div>
+
+                <span class="ai-icon">
+                    🤖
+                </span>
+
+
+                <h2>
+                    AI Security Assistant
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <p>
+            Have questions about this analysis?
+            Ask our AI assistant.
+        </p>
+
+
+        <!-- ================= CHAT INPUT ================= -->
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Ask something about this result..."
+                autocomplete="off"
+            >
+
+
+            <button
+                id="chatButton"
+                type="button"
+            >
+                Ask
+            </button>
+
+        </div>
+
+
+        <!-- ================= AI RESPONSE ================= -->
+
+        <div
+            id="chatResponse"
+            class="chat-response"
+        >
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ACTIONS ================= -->
+
+    <div class="result-actions">
+
+        <a
+            href="dashboard.html"
+            class="analysis-btn"
+        >
+            Analyze Another
+        </a>
+
+
+        <a
+            href="index.html"
+            class="learn-btn"
+        >
+            Back to Home
+        </a>
+
+    </div>
+
+
+</main>
+
+
+
+<script src="js/script.js"></script>
+
+
+
+<!-- =====================================================
+     DISPLAY ANALYSIS RESULT + AI ASSISTANT
+===================================================== -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        // =================================================
+        // GET SAVED RESULT
+        // =================================================
+
+        const savedResult =
+            localStorage.getItem(
+                "analysisResult"
+            );
+
+
+        const analysisType =
+            localStorage.getItem(
+                "analysisType"
+            );
+
+
+        const analyzedUrl =
+            localStorage.getItem(
+                "analyzedUrl"
+            );
+
+
+        const screenshotName =
+            localStorage.getItem(
+                "analyzedScreenshotName"
+            );
+
+
+        const screenshotPreview =
+            localStorage.getItem(
+                "screenshotPreview"
+            );
+
+
+
+        // =================================================
+        // NO RESULT
+        // =================================================
+
+        if (!savedResult) {
+
+            document.getElementById(
+                "analyzedUrl"
+            ).textContent =
+                "No analysis found.";
+
+
+            document.getElementById(
+                "statusText"
+            ).textContent =
+                "No Analysis Found";
+
+
+            document.getElementById(
+                "resultMessage"
+            ).textContent =
+                "Please analyze a URL or screenshot first.";
+
+            return;
+        }
+
+
+
+        // =================================================
+        // PARSE RESULT
+        // =================================================
+
+        let result;
+
+
+        try {
+
+            result =
+                JSON.parse(
+                    savedResult
+                );
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "Result parsing error:",
+                error
+            );
+
+
+            document.getElementById(
+                "statusText"
+            ).textContent =
+                "Analysis Error";
+
+
+            document.getElementById(
+                "resultMessage"
+            ).textContent =
+                "Unable to read the analysis result.";
+
+            return;
+        }
+
+
+
+        // =================================================
+        // DETERMINE ANALYSIS TYPE
+        // =================================================
+
+        const actualType =
+            analysisType ||
+            result.analysis_type ||
+            "url";
+
+
+
+        // =================================================
+        // URL RESULT
+        // =================================================
+
+        if (actualType === "url") {
+
+            document.getElementById(
+                "analyzedItemTitle"
+            ).textContent =
+                "🔗 Analyzed Website";
+
+
+            document.getElementById(
+                "analysisDescription"
+            ).textContent =
+                "Here is the security analysis of the submitted website.";
+
+
+            document.getElementById(
+                "analyzedUrl"
+            ).textContent =
+                analyzedUrl ||
+                result.url ||
+                "Unknown URL";
+
+        }
+
+
+
+        // =================================================
+        // SCREENSHOT RESULT
+        // =================================================
+
+        else {
+
+            document.getElementById(
+                "analyzedItemTitle"
+            ).textContent =
+                "🖼️ Analyzed Screenshot";
+
+
+            document.getElementById(
+                "analysisDescription"
+            ).textContent =
+                "Here is the security analysis of the submitted screenshot.";
+
+
+            document.getElementById(
+                "analyzedUrl"
+            ).textContent =
+                screenshotName ||
+                result.filename ||
+                "Uploaded screenshot";
+
+
+            // ---------------------------------------------
+            // SHOW SCREENSHOT
+            // ---------------------------------------------
+
+            if (screenshotPreview) {
+
+                const container =
+                    document.getElementById(
+                        "resultScreenshotContainer"
+                    );
+
+
+                const image =
+                    document.getElementById(
+                        "resultScreenshot"
+                    );
+
+
+                image.src =
+                    screenshotPreview;
+
+
+                container.style.display =
+                    "block";
+
+            }
+
+        }
+
+
+
+        // =================================================
+        // STATUS
+        // =================================================
+
+        const status =
+            (
+                result.status ||
+                "UNKNOWN"
+            ).toUpperCase();
+
+
+        const statusText =
+            document.getElementById(
+                "statusText"
+            );
+
+
+        const statusIcon =
+            document.getElementById(
+                "statusIcon"
+            );
+
+
+        statusText.textContent =
+            status;
+
+
+
+        // =================================================
+        // REMOVE OLD CLASSES
+        // =================================================
+
+        statusText.classList.remove(
+            "safe-status",
+            "suspicious-status",
+            "dangerous-status"
+        );
+
+
+        statusIcon.classList.remove(
+            "safe-icon",
+            "suspicious-icon",
+            "dangerous-icon"
+        );
+
+
+
+        // =================================================
+        // SAFE
+        // =================================================
+
+        if (status === "SAFE") {
+
+            statusText.classList.add(
+                "safe-status"
+            );
+
+
+            statusIcon.classList.add(
+                "safe-icon"
+            );
+
+
+            statusIcon.textContent =
+                "✓";
+
+        }
+
+
+
+        // =================================================
+        // SUSPICIOUS
+        // =================================================
+
+        else if (
+            status === "SUSPICIOUS"
+        ) {
+
+            statusText.classList.add(
+                "suspicious-status"
+            );
+
+
+            statusIcon.classList.add(
+                "suspicious-icon"
+            );
+
+
+            statusIcon.textContent =
+                "!";
+
+        }
+
+
+
+        // =================================================
+        // DANGEROUS
+        // =================================================
+
+        else if (
+            status === "DANGEROUS"
+        ) {
+
+            statusText.classList.add(
+                "dangerous-status"
+            );
+
+
+            statusIcon.classList.add(
+                "dangerous-icon"
+            );
+
+
+            statusIcon.textContent =
+                "✕";
+
+        }
+
+
+
+        // =================================================
+        // MESSAGE
+        // =================================================
+
+        document.getElementById(
+            "resultMessage"
+        ).textContent =
+            result.message ||
+            "Analysis completed successfully.";
+
+
+
+        // =================================================
+        // TRUST SCORE
+        // =================================================
+
+        document.getElementById(
+            "trustScore"
+        ).textContent =
+            result.score ?? "--";
+
+
+
+        // =================================================
+        // FINDINGS
+        // =================================================
+
+        const findingsList =
+            document.getElementById(
+                "findingsList"
+            );
+
+
+        findingsList.innerHTML =
+            "";
+
+
+        if (
+            Array.isArray(
+                result.findings
+            ) &&
+            result.findings.length > 0
+        ) {
+
+            result.findings.forEach(
+                function (finding) {
+
+                    const li =
+                        document.createElement(
+                            "li"
+                        );
+
+
+                    li.textContent =
+                        "✓ " + finding;
+
+
+                    findingsList.appendChild(
+                        li
+                    );
+
+                }
+            );
+
+        }
+
+        else {
+
+            const li =
+                document.createElement(
+                    "li"
+                );
+
+
+            li.textContent =
+                "No specific security findings were reported.";
+
+
+            findingsList.appendChild(
+                li
+            );
+
+        }
+
+
+
+        // =================================================
+        // PRECAUTIONS
+        // =================================================
+
+        const precautionsList =
+            document.getElementById(
+                "precautionsList"
+            );
+
+
+        precautionsList.innerHTML =
+            "";
+
+
+        if (
+            Array.isArray(
+                result.precautions
+            ) &&
+            result.precautions.length > 0
+        ) {
+
+            result.precautions.forEach(
+                function (precaution) {
+
+                    const li =
+                        document.createElement(
+                            "li"
+                        );
+
+
+                    li.textContent =
+                        precaution;
+
+
+                    precautionsList.appendChild(
+                        li
+                    );
+
+                }
+            );
+
+        }
+
+        else {
+
+            const li =
+                document.createElement(
+                    "li"
+                );
+
+
+            li.textContent =
+                "No additional precautions were provided.";
+
+
+            precautionsList.appendChild(
+                li
+            );
+
+        }
+
+
+
+        // =================================================
+        // OCR TEXT
+        // =================================================
+
+        if (
+            actualType === "screenshot" &&
+            result.extracted_text
+        ) {
+
+            const ocrSection =
+                document.getElementById(
+                    "ocrSection"
+                );
+
+
+            const extractedText =
+                document.getElementById(
+                    "extractedText"
+                );
+
+
+            extractedText.textContent =
+                result.extracted_text;
+
+
+            ocrSection.style.display =
+                "block";
+
+        }
+
+
+
+        // =================================================
+        // DEBUG
+        // =================================================
+
+        console.log(
+            "LinkShield AI Final Result:",
+            result
+        );
+
+
+
+        // =================================================
+        // AI SECURITY ASSISTANT
+        // =================================================
+
+        const chatInput =
+            document.getElementById(
+                "chatInput"
+            );
+
+
+        const chatButton =
+            document.getElementById(
+                "chatButton"
+            );
+
+
+        const chatResponse =
+            document.getElementById(
+                "chatResponse"
+            );
+
+
+
+        // =================================================
+        // ASK AI FUNCTION
+        // =================================================
+
+        async function askAI() {
+
+            const question =
+                chatInput.value.trim();
+
+
+            // ---------------------------------------------
+            // CHECK QUESTION
+            // ---------------------------------------------
+
+            if (!question) {
+
+                chatResponse.textContent =
+                    "Please enter a question.";
+
+                return;
+            }
+
+
+            // ---------------------------------------------
+            // SHOW LOADING
+            // ---------------------------------------------
+
+            chatResponse.textContent =
+                "🤖 AI is thinking...";
+
+
+            chatButton.disabled =
+                true;
+
+
+            chatButton.textContent =
+                "Asking...";
+
+
+            try {
+
+
+                // =========================================
+                // GET LATEST ANALYSIS RESULT
+                // =========================================
+
+                const storedAnalysis =
+                    localStorage.getItem(
+                        "analysisResult"
+                    );
+
+
+                let analysisResult =
+                    result;
+
+
+                if (storedAnalysis) {
+
+                    try {
+
+                        analysisResult =
+                            JSON.parse(
+                                storedAnalysis
+                            );
+
+                    }
+
+                    catch (parseError) {
+
+                        console.warn(
+                            "Could not parse stored analysis. Using current result."
+                        );
+
+                    }
+
+                }
+
+
+
+                // =========================================
+                // SEND REQUEST TO FLASK
+                // =========================================
+
+                const response =
+                    await fetch(
+                        "http://127.0.0.1:5000/ask-ai",
+                        {
+                            method: "POST",
+
+                            headers: {
+                                "Content-Type":
+                                    "application/json"
+                            },
+
+                            body: JSON.stringify({
+
+                                question:
+                                    question,
+
+                                analysis_result:
+                                    analysisResult
+
+                            })
+                        }
+                    );
+
+
+
+                // =========================================
+                // CHECK SERVER RESPONSE
+                // =========================================
+
+                let data;
+
+
+                try {
+
+                    data =
+                        await response.json();
+
+                }
+
+                catch (jsonError) {
+
+                    throw new Error(
+                        "Flask server returned an invalid response."
+                    );
+
+                }
+
+
+
+                // =========================================
+                // SUCCESS
+                // =========================================
+
+                if (
+                    response.ok &&
+                    data.success
+                ) {
+
+                    chatResponse.textContent =
+                        data.answer ||
+                        "AI did not return an answer.";
+
+                }
+
+
+
+                // =========================================
+                // BACKEND ERROR
+                // =========================================
+
+                else {
+
+                    console.error(
+                        "AI Backend Error:",
+                        data
+                    );
+
+
+                    chatResponse.textContent =
+                        data.message ||
+                        "Unable to get AI response.";
+
+                }
+
+            }
+
+
+
+            // =============================================
+            // CONNECTION ERROR
+            // =============================================
+
+            catch (error) {
+
+                console.error(
+                    "AI Assistant Error:",
+                    error
+                );
+
+
+                chatResponse.textContent =
+                    "Unable to connect to AI Assistant. " +
+                    "Please make sure the Flask server is running " +
+                    "and the Gemini API is configured.";
+
+            }
+
+
+
+            // =============================================
+            // RESET BUTTON
+            // =============================================
+
+            finally {
+
+                chatButton.disabled =
+                    false;
+
+
+                chatButton.textContent =
+                    "Ask";
+
+            }
+
+        }
+
+
+
+        // =================================================
+        // ASK BUTTON CLICK
+        // =================================================
+
+        chatButton.addEventListener(
+            "click",
+            askAI
+        );
+
+
+
+        // =================================================
+        // ENTER KEY
+        // =================================================
+
+        chatInput.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (
+                    event.key === "Enter"
+                ) {
+
+                    event.preventDefault();
+
+                    askAI();
+
+                }
+
+            }
+        );
+
+
+    }
+
+);
+
+</script>
+
+
+
+</body>
+
+</html>

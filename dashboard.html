@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - LinkShield AI</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        🛡️ LinkShield AI
+    </div>
+
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="index.html#features">
+                Features
+            </a>
+        </li>
+
+        <li>
+            <a href="index.html#contact">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+
+    <div class="nav-buttons">
+
+        <a href="index.html"
+           class="login-btn">
+            Logout
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= DASHBOARD ================= -->
+
+<main class="dashboard-page">
+
+    <div class="dashboard-content">
+
+        <p class="tagline">
+            🛡️ Security Dashboard
+        </p>
+
+
+        <h1>
+            Welcome to LinkShield AI 🛡️
+        </h1>
+
+
+        <p class="dashboard-description">
+            Analyze suspicious URLs and screenshots to detect
+            phishing, scams and malicious websites.
+        </p>
+
+
+
+        <!-- ================= URL ANALYSIS ================= -->
+
+        <div class="analysis-card">
+
+            <h2>
+                🔗 Analyze a URL
+            </h2>
+
+            <p>
+                Enter a website URL to check whether it is safe.
+            </p>
+
+
+            <input
+                type="url"
+                id="urlInput"
+                placeholder="https://example.com"
+            >
+
+
+            <button
+                id="urlAnalyzeBtn"
+                class="login-submit"
+                type="button"
+            >
+                Analyze URL
+            </button>
+
+        </div>
+
+
+
+        <!-- ================= OR ================= -->
+
+        <div class="or-section">
+
+            <span>OR</span>
+
+        </div>
+
+
+
+        <!-- ================= SCREENSHOT ANALYSIS ================= -->
+
+        <div class="analysis-card">
+
+            <h2>
+                🖼️ Analyze a Screenshot
+            </h2>
+
+
+            <p>
+                Upload a screenshot of the website you want
+                to analyze for phishing and scam indicators.
+            </p>
+
+
+            <div class="upload-box">
+
+                <div class="upload-icon">
+                    📤
+                </div>
+
+
+                <h3>
+                    Upload Website Screenshot
+                </h3>
+
+
+                <p>
+                    PNG, JPG or JPEG
+                </p>
+
+
+                <input
+                    type="file"
+                    id="screenshotInput"
+                    accept="image/png, image/jpeg, image/jpg"
+                >
+
+
+                <!-- IMAGE PREVIEW -->
+
+                <div id="screenshotPreviewContainer">
+
+                    <img
+                        id="imagePreview"
+                        src=""
+                        alt="Screenshot Preview"
+                        style="
+                            display:none;
+                            max-width:100%;
+                            max-height:350px;
+                            margin-top:20px;
+                            border-radius:10px;
+                        "
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="screenshotAnalyzeBtn"
+                class="login-submit"
+                type="button"
+            >
+                Analyze Screenshot
+            </button>
+
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
